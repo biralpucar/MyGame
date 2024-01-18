@@ -85,6 +85,8 @@ public class Weapon : MonoBehaviour
 
             else { shootType = WeaponShootType.Manual; }
         }
+
+    
     }
 
     void LoadAmmo()
@@ -161,7 +163,10 @@ public class Weapon : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, raycastHittableLayers))
         {
-            //Debug.Log(hit.collider);
+            if (hit.collider.TryGetComponent(out Obstacle obs))
+            {
+                obs.DecreaseHealth(10);
+            }
             return hit.point;
         }
         else

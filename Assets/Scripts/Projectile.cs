@@ -5,9 +5,9 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [Header("Projectile Stats")]
-    [SerializeField] float aliveTime; 
+    [SerializeField] float aliveTime;
     [SerializeField] float speed;
-    [SerializeField] float damage; 
+    [SerializeField] float damage;
 
     Rigidbody rbody;
     Collider projCollider;

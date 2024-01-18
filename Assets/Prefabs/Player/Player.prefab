@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4366669593028002191}
   - component: {fileID: 3950600014406157610}
   - component: {fileID: 9067980819375518206}
+  - component: {fileID: 854941913309862015}
+  - component: {fileID: 4819407437691301040}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -78,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponSocketAnimator: {fileID: 5170689246260641650}
-  groundMoveSpeed: 1
+  groundMoveSpeed: 5
   movementSmoothTime: 0.04
   airAcceleration: 0.5
   airDeceleration: 0.2
@@ -101,9 +103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 150974372504125764}
-  sensitivityX: 100
-  sensitivityY: 100
-  mouseLookSmooth: 0.025
+  sensitivityX: 200
+  sensitivityY: 200
+  mouseLookSmooth: 0.05
 --- !u!114 &4366669593028002191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +231,41 @@ MonoBehaviour:
   weapon: {fileID: 0}
   ammoTxt: {fileID: 1388259844793158433}
   backGround: {fileID: 448000477946068597}
+--- !u!136 &854941913309862015
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150974371360183956}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 0.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.20463124, z: 0}
+--- !u!114 &4819407437691301040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150974371360183956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf8dbf1e64d3964586bc3ab62c08518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &150974372241222582
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +523,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 37.57}
 --- !u!95 &5170689246260641650
 Animator:
-  serializedVersion: 5
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -500,6 +537,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1

@@ -9,9 +9,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Animator weaponSocketAnimator;
 
     [Header("Ground Movement")]
-    //[SerializeField] float groundMoveSpeed = 13f;
     [SerializeField] float groundMoveSpeed;
-    [SerializeField] float movementSmoothTime = 0.1f;
+    [SerializeField] float movementSmoothTime; 
 
     [Header("Air Movement")]
     [SerializeField] float airAcceleration = 0.5f;
@@ -57,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         GetJumpInput();
         CalculateVelocity();
         ApplyMovement();
-        CheckOnCursorFocus();
+        //CheckOnCursorFocus();
     }
 
     void GetMoveInput()
@@ -132,20 +131,6 @@ public class PlayerMovement : MonoBehaviour
             audioSource.pitch = Random.Range(0.8f, 1.1f);
             if (foot == 0) audioSource.PlayOneShot(footstepSounds[0]);
             else audioSource.PlayOneShot(footstepSounds[1]); ;
-        }
-    }
-
-    void CheckOnCursorFocus()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
         }
     }
 }
