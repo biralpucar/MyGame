@@ -17,4 +17,9 @@ public class GameManager : MonoSingleton<GameManager>
     {
         Application.Quit();
     }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
