@@ -410,6 +410,16 @@ PrefabInstance:
       propertyPath: m_text
       value: "Ana Men\xFC\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 9162922133025771529, guid: 9ccf83ec6fb4b4a42bb475f738597087,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 45.19995
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162922133025771529, guid: 9ccf83ec6fb4b4a42bb475f738597087,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5999756
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -633,6 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7a83ba24868be846b101cd505eb493c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstacles: []
   obstaclePrefab: {fileID: 343441528165404147, guid: 6e0ff618ceb460b48ae4f8f46bf4bbcf,
     type: 3}
   obstacleCount: 20
@@ -675,11 +686,6 @@ PrefabInstance:
       propertyPath: impactParent
       value: 
       objectReference: {fileID: 1881793040}
-    - target: {fileID: 4689757567266009122, guid: c86d130c778fc7a47951039569681ff2,
-        type: 3}
-      propertyPath: magazineCapacity
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -629,11 +629,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1843144887598462771, guid: ea530e89dc913d14480baec0a57c7801,
         type: 3}
-      propertyPath: magazineCapacity
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843144887598462771, guid: ea530e89dc913d14480baec0a57c7801,
-        type: 3}
       propertyPath: raycastHittableLayers.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}

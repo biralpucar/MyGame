@@ -60,7 +60,7 @@ MonoBehaviour:
   shotDelay: 0.07
   reloadTime: 2
   currentMagazineCount: 0
-  magazineCapacity: 0
+  magazineCapacity: 40
   isReloading: 0
   recoilForce: 0.05
   maxRecoilDistance: 0.09
